@@ -1,0 +1,1843 @@
+
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+    <link rel="icon" href="https://brightschool.com.np/images/favicon.png"  sizes="16x16">
+        <title>New Student | Bright School Management System</title>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.7 -->
+    <link rel="stylesheet" href="https://brightschool.com.np/template/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://brightschool.com.np/template/bower_components/font-awesome/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://brightschool.com.np/template/bower_components/Ionicons/css/ionicons.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="https://brightschool.com.np/template/dist/css/AdminLTE.min.css">
+    <link rel="stylesheet" href="https://brightschool.com.np/template/bower_components/fullcalendar/dist/fullcalendar.min.css">
+
+    <!-- DataTables -->
+    <link rel="stylesheet" href="https://brightschool.com.np/template/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
+
+    <!-- AdminLTE Skins. Choose a skin from the css/skinsF
+         folder instead of downloading all of them to reduce the load. -->
+    <link rel="stylesheet" href="https://brightschool.com.np/template/dist/css/skins/_all-skins.min.css">
+    <!-- Morris chart -->
+    <link rel="stylesheet" href="https://brightschool.com.np/template/bower_components/morris.js/morris.css">
+    <!-- jvectormap -->
+    <link rel="stylesheet" href="https://brightschool.com.np/template/bower_components/jvectormap/jquery-jvectormap.css">
+    <!-- Date Picker -->
+    <link rel="stylesheet" href="https://brightschool.com.np/template/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+    <!-- Daterange picker -->
+    <link rel="stylesheet" href="https://brightschool.com.np/template/bower_components/bootstrap-daterangepicker/daterangepicker.css">
+    <!-- bootstrap wysihtml5 - text editor -->
+    <link rel="stylesheet" href="https://brightschool.com.np/template/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="https://brightschool.com.np/css/style.css">
+    <!-- Select2 -->
+    <link rel="stylesheet" href="https://brightschool.com.np/template/bower_components/select2/dist/css/select2.min.css">
+
+    <link rel="stylesheet" type="text/css" href="https://brightschool.com.np/css/nepali.datepicker.v2.2.min.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-notify/0.2.0/js/bootstrap-notify.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-notify/0.2.0/css/bootstrap-notify.css">
+
+    <script src="https://brightschool.com.np/js/finance/toastr.min.js"></script>
+    <script src="https://brightschool.com.np/js/finance/sweetalert2.all.min.js"></script>
+    <script src="https://brightschool.com.np/js/finance/nepali.datepicker.v2.2.min.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+
+
+    
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:/ -->
+    <!--[if lt IE 9]>
+    ->
+
+    <!-- Google Font -->
+
+    <!-- jQuery 3 -->
+
+    <script src="https://brightschool.com.np/template/bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- jQuery UI 1.11.4 -->
+    <script src="https://brightschool.com.np/template/bower_components/jquery-ui/jquery-ui.min.js"></script>
+    <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+    <script>
+        $.widget.bridge('uibutton', $.ui.button);
+    </script>
+    <!-- Bootstrap 3.3.7 -->
+    <script src="https://brightschool.com.np/template/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Morris.js charts -->
+    <script src="https://brightschool.com.np/template/bower_components/raphael/raphael.min.js"></script>
+    <script src="https://brightschool.com.np/template/bower_components/morris.js/morris.min.js"></script>
+    <!-- Sparkline -->
+    <script src="https://brightschool.com.np/template/bower_components/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
+    <!-- jvectormap -->
+    <script src="https://brightschool.com.np/template/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
+    <script src="https://brightschool.com.np/template/plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+    <!-- jQuery Knob Chart -->
+    <script src="https://brightschool.com.np/template/bower_components/jquery-knob/dist/jquery.knob.min.js"></script>
+    <!-- daterangepicker -->
+    <script src="https://brightschool.com.np/template/bower_components/moment/min/moment.min.js"></script>
+    <script src="https://brightschool.com.np/template/bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <!-- datepicker -->
+    <script src="https://brightschool.com.np/template/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+    <!-- Bootstrap WYSIHTML5 -->
+    <script src="https://brightschool.com.np/template/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
+    <!-- Slimscroll -->
+    <script src="https://brightschool.com.np/template/bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+    <!-- FastClick -->
+    <script src="https://brightschool.com.np/template/bower_components/fastclick/lib/fastclick.js"></script>
+    <!-- AdminLTE App -->
+    <script src="https://brightschool.com.np/template/dist/js/adminlte.min.js"></script>
+    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+    <script src="https://brightschool.com.np/template/dist/js/pages/dashboard.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="https://brightschool.com.np/template/dist/js/demo.js"></script>
+
+    <!-- DataTables -->
+    <script src="https://brightschool.com.np/template/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="https://brightschool.com.np/template/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+    <!-- Select2 -->
+    <script src="https://brightschool.com.np/template/bower_components/select2/dist/js/select2.full.min.js"></script>
+    
+    <script src="https://brightschool.com.np/template/bower_components/fullcalendar/dist/fullcalendar.min.js"></script>
+    <!-- Nepali date -->
+    <script type="text/javascript" src="https://brightschool.com.np/js/nepali.datepicker.v2.2.min.js"></script>
+
+    
+    <script type="text/javascript" src="https://brightschool.com.np/vendor/jsvalidation/js/jsvalidation.js"></script>
+
+    <!-- Nepalidate -->
+    
+    <script src="https://brightschool.com.np/js/qrious.js"></script>
+    <script src="https://brightschool.com.np/js/jquery-barcode.min.js"></script>
+    <script src="https://brightschool.com.np/js/jquery-barcode.js"></script>
+    <script src="https://brightschool.com.np/js/custom.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://brightschool.com.np/css/jasny-bootstrap.min.css" />
+    <script src="https://brightschool.com.np/js/custom.js"></script>
+    <script src="https://brightschool.com.np/template/bower_components/chart-new/Chart.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="https://brightschool.com.np/css/style.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="https://brightschool.com.np/css/template-custom.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="https://brightschool.com.np/css/print.css" media="print" />
+    <style>
+        #load{
+            width:100%;
+            height:100%;
+            position:fixed;
+            z-index:9999;
+            /*background:url("https://www.creditmutuel.fr/cmne/fr/banques/webservices/nswr/images/loading.gif") no-repeat center center rgba(0,0,0,0.25)*/
+        }
+        #load_content {
+            font-family: FontAwesome;
+            font-style: normal;
+            font-weight: normal;
+            text-decoration: inherit;
+            position: absolute;
+            font-size: 50px;
+            top: 45%;
+            left: 50%;
+            z-index: 1;
+            height:100%;
+            color:black;
+        }
+        .treeview-menu {
+            background-color: #f7f7f7;
+        }
+
+        .wrapper {
+            display: block;
+        }
+
+        #settingBar {
+            width:0;
+            height: 100%;
+            position: fixed;
+            padding-top: 10px;
+            background-color: #0356a2;
+            top: 0;
+            right: 0;
+            /* top layer */
+            z-index: 9999;
+            color: white;
+        }
+        #openSetting{
+            padding: 0 8px;
+            cursor: pointer;
+            position: absolute;
+            top:50px;
+            right: 0;
+            background-color: #0a6ebd;
+            border-radius:10px 0 0 10px; ;
+        }
+
+
+
+    </style>
+    <!-- InputMask -->
+    <script src="https://brightschool.com.np/template/plugins/input-mask/jquery.inputmask.js"></script>
+    <script src="https://brightschool.com.np/template/plugins/input-mask/jquery.inputmask.date.extensions.js"></script>
+    <script src="https://brightschool.com.np/template/plugins/input-mask/jquery.inputmask.extensions.js"></script>
+    <script>
+        $(function () {
+
+
+
+            //Initialize Select2 Elements
+            $('.select2').select2();
+
+            //Datemask dd/mm/yyyy
+            $('#datemask').inputmask('yyyy-mm-dd', { 'placeholder': 'yyyy-mm-dd' });
+            //Datemask2 mm/dd/yyyy
+            $('.datemask').inputmask('yyyy-mm-dd', { 'placeholder': 'yyyy-mm-dd' });
+            $('#datepicker10').inputmask('yyyy-mm-dd', { 'placeholder': 'yyyy-mm-dd' });
+            $('#datepicker20').inputmask('yyyy-mm-dd', { 'placeholder': 'yyyy-mm-dd' });
+            $('#datepicker30').inputmask('yyyy-mm-dd', { 'placeholder': 'yyyy-mm-dd' });
+            $('#datepicker40').inputmask('yyyy-mm-dd', { 'placeholder': 'yyyy-mm-dd' });
+            $('#englishDate8').inputmask('yyyy-mm-dd', { 'placeholder': 'yyyy-mm-dd' });
+            $('#date10').inputmask('yyyy-mm-dd', { 'placeholder': 'yyyy-mm-dd' });
+            $('.marks').inputmask('yyyy-mm-dd', { 'placeholder': 'yyyy-mm-dd' });
+            $('#nepaliDateAdmission').inputmask('yyyy-mm-dd', { 'placeholder': 'yyyy-mm-dd' });
+            $('#datepicker80').inputmask('yyyy-mm-dd', { 'placeholder': 'yyyy-mm-dd' });
+            $('#datepicker222').inputmask('yyyy-mm-dd', { 'placeholder': 'yyyy-mm-dd' });
+            $('#datepicker333').inputmask('yyyy-mm-dd', { 'placeholder': 'yyyy-mm-dd' });
+            $('#timepicker').inputmask('hh:mm:ss', { 'placeholder': 'hh:mm:ss' });
+            $('#invoicedatead').inputmask('yyyy-mm-dd', { 'placeholder': 'yyyy-mm-dd' });
+            $('#duedatead').inputmask('yyyy-mm-dd', { 'placeholder': 'yyyy-mm-dd' });
+            $('#reportdatefrom').inputmask('yyyy-mm-dd', { 'placeholder': 'yyyy-mm-dd' });
+            $('#reportdateto').inputmask('yyyy-mm-dd', { 'placeholder': 'yyyy-mm-dd' });
+            $('.calenderdate').inputmask('yyyy-mm-dd', { 'placeholder': 'yyyy-mm-dd' });
+            //Money Euro
+            $('[data-mask]').inputmask();
+            $('.timemask').inputmask({mask: "99:99"},{'placeholder':'hh:mm'});
+
+            $('.myDatemask').inputmask({mask: "9999-99-99"},{'placeholder':'yyyy-mm-dd'});
+
+            var today = new Date();
+            var dd = today.getDate();
+            var mm = today.getMonth()+1; //January is 0!
+            var yyyy = today.getFullYear();
+
+            if(dd<10) {
+                dd = '0'+dd
+            }
+
+            if(mm<10) {
+                mm = '0'+mm
+            }
+
+
+            today =  yyyy + '-' + mm + '-' + dd;
+            $('.todaydatebs').val(AD2BS(today));
+            $('.todaydatebs').text(AD2BS(today));
+            //Date range picker
+            $('#reservation').daterangepicker();
+            //Date range picker with time picker
+            $('#reservationtime').daterangepicker({ timePicker: true, timePickerIncrement: 30, format: 'MM/DD/YYYY h:mm A' });
+            //Date range as a button
+            $('#daterange-btn').daterangepicker(
+                {
+                    ranges   : {
+                        'Today'       : [moment(), moment()],
+                        'Yesterday'   : [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+                        'Last 7 Days' : [moment().subtract(6, 'days'), moment()],
+                        'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+                        'This Month'  : [moment().startOf('month'), moment().endOf('month')],
+                        'Last Month'  : [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+                    },
+                    startDate: moment().subtract(29, 'days'),
+                    endDate  : moment()
+                },
+                function (start, end) {
+                    $('#daterange-btn span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'))
+                }
+            );
+
+            //Date picker
+            $('#datepicker').datepicker({
+                autoclose: true
+            });
+
+            //iCheck for checkbox and radio inputs
+            $('input[type="checkbox"].minimal, input[type="radio"].minimal').iCheck({
+                checkboxClass: 'icheckbox_minimal-blue',
+                radioClass   : 'iradio_minimal-blue'
+            });
+            //Red color scheme for iCheck
+            $('input[type="checkbox"].minimal-red, input[type="radio"].minimal-red').iCheck({
+                checkboxClass: 'icheckbox_minimal-red',
+                radioClass   : 'iradio_minimal-red'
+            });
+            //Flat red color scheme for iCheck
+            $('input[type="checkbox"].flat-red, input[type="radio"].flat-red').iCheck({
+                checkboxClass: 'icheckbox_flat-green',
+                radioClass   : 'iradio_flat-green'
+            });
+
+            //Colorpicker
+            $('.my-colorpicker1').colorpicker();
+            //color picker with addon
+            $('.my-colorpicker2').colorpicker();
+
+            //Timepicker
+            $('.timepicker').timepicker({
+                showInputs: false
+            })
+
+
+
+
+
+
+        })
+
+        const Toast = Swal.mixin({
+            toast: true,
+            position: 'top-end',
+            showConfirmButton: false,
+            timer: 3000
+        });
+
+    </script>
+</head>
+<body class="hold-transition sidebar-mini">
+<div id="load"><span id="load_content" class="text-blue"><i class="fa fa-spinner fa-pulse fa-3x-fa-fw"></i></span></div>
+<div class="wrapper">
+    <div class='notifications bottom-right'></div>
+    <div class="overlay"></div>
+    
+    <header class="main-header" style="background-color: #0356a2; color: white;">
+                <div class=" alert-danger d-flex align-items-center" role="alert">
+            <div class="text-center">
+              <i class="fa fa-warning"></i>  be careful your session running in 2078.
+            </div>
+        </div>
+        
+        <a href="https://brightschool.com.np/dashboard" class="logo">
+                        <span class="logo-mini" style="color:white;"><b>B</b>S</span>
+            <span class="logo-lg"><img src="https://brightschool.com.np/images/logo-head.png" style="width: 205px;"> </span>
+                        </a>
+
+        <nav class="navbar navbar-static-top">
+            <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+                <span class="sr-only">Toggle navigation</span>
+            </a>
+            <h4 class="pull-left" style="padding-left: 10px; padding-top: 6px; ">Bright School  update v 2.7 &nbsp; &nbsp; <span style="padding: 0px 15px; border:1px solid white">2078</span> </h4>
+            <div class="navbar-custom-menu">
+
+                <ul class="nav navbar-nav">
+                    <li class="dropdown notifications-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="background-color: #f7f7f7;">
+                            webbanknepal@gmail.com <i class="fa fa-angle-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="header"><a href="https://brightschool.com.np/logout"
+                                                  onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                    Logout
+                                </a></li>
+                            <form id="logout-form" action="https://brightschool.com.np/logout" method="POST" style="display: none;">
+                                <input type="hidden" name="_token" value="03NV38k2da8obd1ytsJ1ayzD8UGa6mfLPmrzlWBC">
+                            </form>
+                            <li class="header"><a href="https://brightschool.com.np/change-password">Change Password</a></li>
+                            <li class="header"> <a href="#" id="changesessionbtn"> Change Session</a></li>
+                                                            <li class="header"><a href="https://brightschool.com.np/create-user">Create User</a></li>
+                                <li class="header"><a href="https://brightschool.com.np/view-user">Users List</a></li>
+                                                    </ul>
+                    </li>
+                </ul>
+
+                <span id="openSetting" onclick="openSetting()" style=" ">
+                    <i class="fa fa-gear"></i>
+                </span>
+            </div>
+        </nav>
+
+    </header>
+    <div class="modal fade" id="sessionchangemodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document"  style="width: 50%;">
+            <div class="modal-content">
+                <div class="modal-header account-head " style="background-color: #dd4b39;">
+                    <button class="close" aria-label="Close" type="button" data-dismiss="modal" style="margin-top: 10px; color: #f2f5f7;">
+                        <span aria-hidden="true">×</span></button>
+                    <h3 class="modal-title">Change User Session</h3>
+                </div>
+                <div class="modal-body">
+
+                    <form class="form" method="post" id="changeusersession" action="https://brightschool.com.np/change-user-session">
+
+                        <input type="hidden" name="_token" value="03NV38k2da8obd1ytsJ1ayzD8UGa6mfLPmrzlWBC">
+                        <div class="form-group col-lg-6">
+                            <label for="name"> Current Academic Session</label>
+                            <input class="form-control  " name="activesession"  value="2079"  readonly/>
+
+                        </div> <!-- expiry date -->
+                        <div class="form-group col-lg-6">
+                            <label for="name">User Session</label>
+                            <select name="sessions" class="form-control">
+
+                            </select>
+                        </div> <!-- expiry date -->
+                        <div class="modal-footer" style="border: none;">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            <input type="submit" class="btn btn-primary checkDate" value="Chnage Session" onclick="return confirm('Are you sure want to change the user session?')">
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $('#changesessionbtn').click(function () {
+
+
+                $.ajaxSetup({
+                    headers: {
+                        'X-CSRF-TOKEN': $('input[name=_token]').val()
+                    }
+                });
+
+                $.ajax({
+                    type: 'GET',
+                    url: 'https://brightschool.com.np/get-session',
+                    dataType: 'json',
+                    data: {
+                    },
+
+                    success: function (data) {
+
+                        $('select[name=sessions]').find('option').remove();
+                        $.each(data, function () {
+                            var option = $('<option value="' + this.id + '">' + this.year + '</option>');
+                            $('select[name=sessions]').append(option);
+                        });
+                        $('select[name=sessions] option[value="3"]').attr("selected", "selected");
+                        $('#sessionchangemodal').modal('show');
+                    },
+                    error: function (data) {
+                        alert("error");
+                    }
+
+
+                });
+
+            });
+        });
+    </script>
+
+        <aside class="main-sidebar" style="padding-top: 70px;" >
+        <section class="sidebar">
+            <ul class="sidebar-menu" data-widget="tree">
+
+                    <li><a href="https://brightschool.com.np/dashboard"><i class="fa fa fa-tachometer text-red"></i> <span>Dashboard</span></a></li>
+                                <li class="treeview active"><a href="#"><i class="fa fa-users text-red"></i> <span>Student Management </span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a>
+                        <ul class="treeview-menu">
+                            <li><a href="https://brightschool.com.np/student"><i class="fa fa-user-o text-red"></i> <span class="text-red">Students</span></a></li>
+                            <li><a href="https://brightschool.com.np/onlineadmission"><i class="fa fa-user-circle  "></i> <span class=""  >Admission Request</span></a></li>
+
+                            <li class="treeview  "><a href="#"><i class="fa fa-gear"></i> <span>Student Setting</span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a>
+                            <ul class="treeview-menu">
+                            <li><a class="" href="https://brightschool.com.np/batch"><i class="fa fa-circle-o"></i> Batch</a></li>
+                            <li><a class="" href="https://brightschool.com.np/faculty"><i class="fa fa-circle-o"></i> Faculty</a></li>
+                            <li><a class="" href="https://brightschool.com.np/level"><i class="fa fa-circle-o"></i> Level</a></li>
+                                <li><a class="" href="https://brightschool.com.np/program"><i class="fa fa-circle-o"></i> Program</a></li>
+                                <li><a class="" href="https://brightschool.com.np/class"><i class="fa fa-circle-o"></i> Class</a></li>
+                                <li><a class="" href="https://brightschool.com.np/section"><i class="fa fa-circle-o"></i> Section</a></li>
+                                <li><a class="" href="https://brightschool.com.np/type"><i class="fa fa-circle-o"></i> Student Type</a></li>
+                                <li><a class="" href="https://brightschool.com.np/group"><i class="fa fa-circle-o"></i> Group</a></li>
+                                <li><a class="" href="https://brightschool.com.np/caste"><i class="fa fa-circle-o"></i> Caste</a></li>
+                                <li><a class="" href="https://brightschool.com.np/hobby"><i class="fa fa-circle-o"></i> Hobby</a></li>
+                                <li><a class="" href="https://brightschool.com.np/guardian_relation"><i class="fa fa-circle-o"></i> Guardian Relation</a></li>
+                                <li><a class="" href="https://brightschool.com.np/guardian_group"><i class="fa fa-circle-o"></i> Guardian Group</a></li>
+                            </ul>
+                            </li>
+                            <li class="treeview "><a href="#"><i class="fa fa-calendar"></i> <span>Student Report</span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a>
+                                <ul class="treeview-menu">
+                                    <li><a class="" href="https://brightschool.com.np/admit-card"><i class="fa fa-circle-o"></i> Admit Card</a></li>
+                                    <li><a class="" href="https://brightschool.com.np/studentqrcode"><i class="fa fa-circle-o"></i> Students QRcode</a></li>
+                                    <li><a class="" href="https://brightschool.com.np/admissionreport"><i class="fa fa-circle-o"></i> Admission Report</a></li>
+                                    <li><a class="" href="https://brightschool.com.np/studentdetails"><i class="fa fa-circle-o"></i> Student Details</a></li>
+                                    <li><a  class=""href="https://brightschool.com.np/app-user-details"><i class="fa fa-circle-o"></i> App User Details</a></li>
+                                    <li><a class="" href="https://brightschool.com.np/birthday"><i class="fa fa-circle-o"></i> Birthday</a></li>
+                                </ul>
+                            </li>
+
+
+
+                            <li class="treeview "><a href="#"><i class="fa fa-arrow-up"></i> <span>Student Modification</span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a>
+                                <ul class="treeview-menu">
+
+                                    <li><a class="" href="https://brightschool.com.np/updatestudent"><i class="fa fa-circle-o"></i> Studentupdate</a></li>
+
+
+
+                                </ul>
+                            </li>
+                                                      <li><a  href="https://brightschool.com.np/feedback"><i class="fa fa-comment-o  "></i> <span class="">Guardian Feedback</span></a></li>
+                                <li><a href="https://brightschool.com.np/comment"><i class="fa fa-cubes  "></i> <span class="">Students Log</span></a></li>
+                                <li><a href="https://brightschool.com.np/medical_detail"><i class="fa fa-medkit  "></i> <span class="">Medical Details</span></a></li>
+
+                                                        </ul>
+                        </li>
+                                                            <li class="treeview  "><a href="#"><i class="fa fa-graduation-cap text-red"></i> <span> Academic </span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a>
+                        <ul class="treeview-menu">
+                            <li><a href="https://brightschool.com.np/academic/marksdetails"><i class="fa fa-copy  "></i> <span class="">Marks Details </span></a></li>
+                            <li><a href="https://brightschool.com.np/academic/marksentry"><i class="fa fa-copy  "></i> <span class=" ">Marks Entry</span></a></li>
+                            <li><a href="https://brightschool.com.np/academic/remark"><i class="fa fa-copy   "></i> <span class="">Remarks</span></a></li>
+                            <li><a href="https://brightschool.com.np/academic/extrasubject"><i class="fa fa-copy "></i> <span class="">Extra Subject</span></a></li>
+                            <li><a href="https://brightschool.com.np/academic/attendance"><i class="fa fa-copy  "></i> <span class="">Attendance</span></a></li>
+                            <li><a href="https://brightschool.com.np/academic/report"><i class="fa fa-calendar-o "></i> <span class=" "> Academic Report</span></a></li>
+                            <li><a href="https://brightschool.com.np/routine"><i class="fa fa-bars "></i> <span class=""> Exam Routine</span></a></li>
+                            <li><a href="https://brightschool.com.np/academic/classroutine"><i class="fa fa-copy "></i> <span class=""> Class Routine</span></a></li>
+
+                            <li class="treeview 
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                                    "><a href="#"><i class="fa fa-gear"></i> <span>setup</span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a>
+                                <ul class="treeview-menu">
+                                    <li><a class="" href="https://brightschool.com.np/academic/examtype"><i class="fa fa-circle-o"></i> Exam Type</a></li>
+                                    <li><a class="" href="https://brightschool.com.np/academic/subject"><i class="fa fa-circle-o"></i> Subject</a></li>
+                                    <li><a class="" href="https://brightschool.com.np/academic/classsubject"><i class="fa fa-circle-o"></i> Class Subject</a></li>
+                                    <li><a class="" href="https://brightschool.com.np/academic/subjectselection"><i class="fa fa-circle-o"></i> Subject Selection </a></li>
+                                    <li><a class="" href="https://brightschool.com.np/academic/markderivation"><i class="fa fa-circle-o"></i> Mark Derivation </a></li>
+                                    <li><a class="" href="https://brightschool.com.np/academic/division"><i class="fa fa-circle-o"></i> Division  </a></li>
+                                    <li><a class="" href="https://brightschool.com.np/academic/remarks"><i class="fa fa-circle-o"></i> Remarks Setup  </a></li>
+                                    <li><a class="" href="https://brightschool.com.np/academic/resultpublish"><i class="fa fa-circle-o"></i> Result Publish  </a></li>
+
+
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    
+                
+                                            <li class="treeview   "><a href="#"><i class="fa fa-dollar text-red"></i> <span> Account </span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a>
+                        <ul class="treeview-menu">
+
+                            <li><a href="https://brightschool.com.np/account/account"><i class="fa fa-users "></i> <span class="">  Students List</span></a></li>
+                            <li class="treeview  "><a href="#"><i class="fa fa-file-pdf-o"></i> <span>Class Wise Bill</span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a>
+                                <ul class="treeview-menu">
+                                    <li><a href="https://brightschool.com.np/account/student-setup"><i class="fa fa-circle-o "></i> <span class=" "> Students Setup </span></a></li>
+                                    <li><a href="https://brightschool.com.np/account/group-invoice"><i class="fa fa-circle-o  "></i> <span class=" "> Invoices  Generate </span></a></li>
+                                    <li><a href="https://brightschool.com.np/account/group-mis"><i class="fa fa-circle-o "></i> <span class=" "> Miscellaneous  </span></a></li>
+                                </ul>
+                            </li>
+                            <li class="treeview   "><a href="#"><i class="fa fa-gears"></i> <span>Account setup</span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a>
+                                <ul class="treeview-menu">
+                                    <li><a class="" href="https://brightschool.com.np/account/accounthead"><i class="fa fa-circle-o"></i> Account Head</a></li>
+                                    <li><a class="" href="https://brightschool.com.np/account/accountrate"><i class="fa fa-circle-o"></i> Account Rate</a></li>
+                                    <li><a class="" href="https://brightschool.com.np/account/bussetup"><i class="fa fa-circle-o"></i> Bus Setup</a></li>
+                                    <li><a class="" href="https://brightschool.com.np/account/miscsetup"><i class="fa fa-circle-o"></i> Misc Particular </a></li>
+                                    <li><a class="" href="https://brightschool.com.np/account/activity"><i class="fa fa-circle-o"></i>  Activity</a></li>
+                                    
+                                    
+                                    
+                                </ul>
+                            </li>
+
+                            <li class="treeview  "><a href="#"><i class="fa fa-refresh"></i> <span>Account Report</span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a>
+                                <ul class="treeview-menu">
+                                    <li><a class="" href="https://brightschool.com.np/account/daybook"><i class="fa fa-circle-o"></i> DayBook</a></li>
+                                    <li><a class="" href="https://brightschool.com.np/account/student-wise-due-new"><i class="fa fa-circle-o"></i> Due Report</a></li>
+                                    <li><a class="" href="https://brightschool.com.np/account/discount-report"><i class="fa fa-circle-o"></i> Discount Report</a></li>
+                                    <li><a class="" href="https://brightschool.com.np/account/busstopreport"><i class="fa fa-circle-o"></i> Bus Stop Report</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                
+                                        <li class="treeview  "><a href="#"><i class="fa fa-gear text-red"></i> <span>Settings</span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a>
+                        <ul class="treeview-menu">
+                            <li><a href="https://brightschool.com.np/csession"><i class="fa fa-circle-o  "></i> <span class=" " >Current Session </span> </a></li>
+                            <li><a href="https://brightschool.com.np/student-upgrade"><i class="fa fa  fa-upload  "></i> <span class="">Student Upgrade</span></a></li>
+                            <li><a href="https://brightschool.com.np/district"><i class="fa fa  fa-window-maximize   "></i> <span class=" ">District</span></a></li>
+                            <li><a href="https://brightschool.com.np/mmrm"><i class="fa fa  fa-window-maximize  "></i> <span class=" ">MM/RM</span></a></li>
+                            <li><a href="https://brightschool.com.np/message_format"><i class="fa fa  fa-window-maximize  "></i> <span class=" ">Message Format</span></a></li>
+                        </ul>
+                    </li>
+
+                                                            <li class="treeview  "><a href="#"><i class="fa fa-line-chart text-red"></i> <span>Finance</span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a>
+                        <ul class="treeview-menu">
+                            <li><a href="https://brightschool.com.np/finance/dashboard"><i class="fa fa-dashboard  "></i> <span class=""> Dashboard</span></a></li>
+                            <li class="treeview  "><a href="#"><i class="fa fa-file"></i> <span> Voucher Entry</span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a>
+                                <ul class="treeview-menu">
+                                    <li><a  href="https://brightschool.com.np/finance/vouchers/create?voucher_type=Journal" class=" "><i class="fa fa-circle-o  "></i>  Journal </a></li>
+                                    <li><a  href="https://brightschool.com.np/finance/vouchers/create?voucher_type=Payment" class=" "><i class="fa fa-circle-o"></i>  Payment </a></li>
+                                    <li><a  href="https://brightschool.com.np/finance/vouchers/create?voucher_type=Reciept" class=" "><i class="fa fa-circle-o"></i>  Receipt </a></li>
+                                </ul>
+                            </li>
+
+                            <li class="treeview  "><a href="#"><i class="fa fa-book"></i> <span> Voucher Book</span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a>
+                                <ul class="treeview-menu">
+                                    <li><a  href="https://brightschool.com.np/finance/vouchers?voucher_type=Journal"><i class="fa fa-circle-o  "></i>  Journal </a></li>
+                                    <li><a  href="https://brightschool.com.np/finance/vouchers?voucher_type=Payment"><i class="fa fa-circle-o"></i>  Payment </a></li>
+                                    <li><a  href="https://brightschool.com.np/finance/vouchers?voucher_type=Reciept"><i class="fa fa-circle-o"></i>  Receipt </a></li>
+                                    <li><a href="https://brightschool.com.np/finance/vouchers/deleted"><i class="fa fa-circle-o"></i> Deleted Vouchers</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="https://brightschool.com.np/finance/analysis/account"><i class="fa fa-bars  "></i> <span class=""> Account Analysis</span></a></li>
+
+                            <li class="treeview  "><a href="#"><i class="fa fa-pie-chart"></i> <span>Report</span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a>
+                                <ul class="treeview-menu">
+
+                                    <li><a href="https://brightschool.com.np/finance/report/sub-ledger"><i class="fa fa-circle-o  "></i> Sub Ledger</a></li>
+                                    <li><a href="https://brightschool.com.np/finance/report/main-ledger"><i class="fa fa-circle-o  "></i> Main Ledger</a></li>
+                                    <li><a href="https://brightschool.com.np/finance/report/income-and-expenses"><i class="fa fa-circle-o  "></i> Income & Expenses</a></li>
+                                    <li><a href="https://brightschool.com.np/finance/report/reciept-and-payment"><i class="fa fa-circle-o  "></i> Receipt & Payment</a></li>
+                                    <li><a href="https://brightschool.com.np/finance/report/bank-cash-book"><i class="fa fa-circle-o  "></i> Bank-Cash Book</a></li>
+
+                                    <li><a href="https://brightschool.com.np/finance/report/daily-report"><i class="fa fa-circle-o  "></i> Daily Report</a></li>
+                                    <li><a href="https://brightschool.com.np/finance/report/daybook"><i class="fa fa-circle-o  "></i> Daybook</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="treeview  "><a href="#"><i class="fa fa-gear"></i> <span>Account Setup</span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a>
+                                <ul class="treeview-menu">
+                                    <li><a  href="https://brightschool.com.np/finance/account-heads"><i class="fa fa-circle-o  "></i>  Account Head </a></li>
+                                    <li><a  href="https://brightschool.com.np/finance/fiscal-years"><i class="fa fa-circle-o"></i>  Fiscal Year </a></li>
+                                    <li><a  href="https://brightschool.com.np/finance/party"><i class="fa fa-user-o"></i>  Parties  </a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </li>
+
+
+                    <li class="treeview  "><a href="#"><i class="fa fa-money text-red"></i> <span>Payroll</span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a>
+                        <ul class="treeview-menu">
+                    <li><a href="https://brightschool.com.np/payroll/employee"><i class="fa fa-user-o "></i> <span class="">Employee</span></a></li>
+                            <li><a href="https://brightschool.com.np/payroll/payrun"><i class="fa fa-calendar "></i> <span class="">Payrun</span></a></li>
+                            <li><a href="https://brightschool.com.np/payroll/advance"><i class="fa fa-credit-card "></i> <span class="">Advance</span></a></li>
+                            <li><a href="https://brightschool.com.np/payroll/salary-title"><i class="fa fa-genderless "></i> <span class="">Salary Title</span></a></li>
+                        </ul>
+                    </li>
+
+                                                            <li class="treeview  "><a href="#"><i class="fa fa-bars text-red"></i> <span>Library</span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a>
+                    <ul class="treeview-menu">
+                        <li><a class="" href="https://brightschool.com.np/library/book"><i class="fa fa-book"></i> Books </a></li>
+                        <li><a class="" href="https://brightschool.com.np/library/member"><i class="fa fa-users"></i> Members </a></li>
+                        <li><a class="" href="https://brightschool.com.np/library/issues-and-returns"><i class="fa fa-exchange"></i> Issues &amp; Returns</a></li>
+
+                        <li class="treeview  "><a href="#"><i class="fa fa-gears"></i> <span>Setup</span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a>
+                            <ul class="treeview-menu">
+                                <li><a class="" href="https://brightschool.com.np/library/category"><i class="fa fa-circle-o  "></i>  Category </a></li>
+                                <li><a class="" href="https://brightschool.com.np/library/shelf"><i class="fa fa-circle-o"></i>  Shelf </a></li>
+                                <li><a class="" href="https://brightschool.com.np/library/supplier"><i class="fa fa-circle-o"></i>  Supplier </a></li>
+                                <li><a class="" href="https://brightschool.com.np/library/donor"><i class="fa fa-circle-o"></i>  Donor </a></li>
+                                <li><a class="" href="https://brightschool.com.np/library/membertype"><i class="fa fa-circle-o"></i>  Member Type </a></li>
+
+                            </ul>
+                        </li>
+                        <li class="treeview   "><a href="#"><i class="fa fa-calendar"></i> <span>Report</span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a>
+                            <ul class="treeview-menu">
+                                <li><a class="" href="https://brightschool.com.np/library/issue"><i class="fa fa-circle-o"></i>  Circulation </a></li>
+                                <li><a class="" href="https://brightschool.com.np/library/issue-return-report"><i class="fa fa-circle-o"></i>   Issue &amp; Return Report  </a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                    </li>
+                    
+                                        <li class="treeview "><a href="#"><i class="fa fa-check-square-o text-red"></i> <span>Attendance</span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a>
+                        <ul class="treeview-menu">
+                            <li><a class="" href="https://brightschool.com.np/attendance/liveattendance"><i class="fa fa-circle-o"></i>  Live Attendance </a></li>
+                            <li><a class="" href="https://brightschool.com.np/attendance/attendancereport"><i class="fa fa-circle-o"></i>  Report </a></li>
+                            <li><a  class="" href="https://brightschool.com.np/attendance/studentreport"><i class="fa fa-circle-o"></i>  Students Report </a></li>
+                            <li><a  class="" href="https://brightschool.com.np/attendance/student/leave-request"><i class="fa fa-circle-o"></i>  Leave Request </a></li>
+
+
+                            <li><a  class="" href="https://brightschool.com.np/attendance/online-class-attendance-report"><i class="fa fa-circle-o"></i>  Online Class  </a></li>
+                                                        <li class="treeview   "><a href="#"><i class="fa fa-users"></i> <span>Teacher</span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a>
+                                <ul class="treeview-menu">
+                                    <li><a class="" href="https://brightschool.com.np/attendance/device"><i class="fa fa-circle-o"></i>   Device   </a></li>
+                                    <li><a class="" href="https://brightschool.com.np/attendance/shift"><i class="fa fa-circle-o"></i>   shift   </a></li>
+                                    <li><a class="" href="https://brightschool.com.np/attendance/teacher/leave_type"><i class="fa fa-circle-o"></i>   Leave Type  </a></li>
+                                    <li><a class="" href="https://brightschool.com.np/attendance/teacher/teacher_leave"><i class="fa fa-circle-o"></i>   Leave request </a></li>
+                                    <li><a class="" href="https://brightschool.com.np/attendance/teacher/employee_attendance"><i class="fa fa-circle-o"></i>   Attendance </a></li>
+                                </ul>
+                            </li>
+                                                    </ul>
+                    </li>
+
+                    <li class="treeview"><a href="#"><i class="fa fa-cubes text-red"></i> <span>Inventory </span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a></li>
+                        <li class="treeview  "><a href="#"><i class="fa fa-users text-red"></i> <span>Teacher & Staff </span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a>
+
+                            <ul class="treeview-menu">
+                                <li><a class="" href="https://brightschool.com.np/teacher"><i class="fa fa-circle-o"></i>  Teacher&Staff </a></li>
+                                <li><a class="" href="https://brightschool.com.np/teacher-staff-meeting"><i class="fa fa-circle-o"></i>  Teacher&Staff Meeting </a></li>
+                                <li><a class="" href="https://brightschool.com.np/teachersubject"><i class="fa fa-circle-o"></i> TeacherSubjects </a></li>
+
+                            </ul>
+                        </li>
+                        <li class="treeview  "><a href="#"><i class="fa fa-mobile text-red"></i> <span>Mobile App </span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a>
+
+                        <ul class="treeview-menu">
+                            <li><a class="" href="https://brightschool.com.np/informationsys/notification"><i class="fa fa-circle-o"></i>  Notification </a></li>
+                            <li><a class="" href="https://brightschool.com.np/informationsys/message"><i class="fa fa-circle-o"></i>  Message </a></li>
+                            <li><a class="" href="https://brightschool.com.np/informationsys/newsandevent"><i class="fa fa-circle-o"></i>  News & Events </a></li>
+                            <li><a class="" href="https://brightschool.com.np/informationsys/homework"><i class="fa fa-circle-o"></i>  Homework </a></li>
+                            <li><a class="" href="https://brightschool.com.np/informationsys/assignment"><i class="fa fa-circle-o"></i>  Assignment </a></li>
+                            <li><a class="" href="https://brightschool.com.np/informationsys/onlineclass"><i class="fa fa-circle-o"></i>  Online Class </a></li>
+                            <li><a class="" href="https://brightschool.com.np/informationsys/lesson-plan"><i class="fa fa-circle-o"></i>  Lesson Plan </a></li>
+                            <li><a class="" href="https://brightschool.com.np/informationsys/observation"><i class="fa fa-circle-o"></i>  Observation </a></li>
+                            <li><a class="" href="https://brightschool.com.np/informationsys/teachernotification"><i class="fa fa-circle-o"></i>  Teacher Notification </a></li>
+                            <li><a class="" href="https://brightschool.com.np/informationsys/schoolprofile"><i class="fa fa-circle-o"></i> School Profile </a></li>
+                            <li><a class="" href="https://brightschool.com.np/informationsys/marksentry-schedule"><i class="fa fa-circle-o"></i> Marks Entry Schedule </a></li>
+                            <li><a class="" href="https://brightschool.com.np/informationsys/policy"><i class="fa fa-circle-o"></i>  Policies </a></li>
+
+                        </ul>
+                    </li>
+                    <li class="treeview  "><a href="#"><i class="fa fa-mortar-board text-red"></i> <span>Online Exam  </span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a>
+
+                        <ul class="treeview-menu">
+                            <li><a class="" href="https://brightschool.com.np/informationsys/online-exam/question_collection"><i class="fa fa-circle-o"></i>  Question Collection </a></li>
+                            <li><a class="" href="https://brightschool.com.np/informationsys/online-exam/exam_control"><i class="fa fa-circle-o"></i>  Exam Control </a></li>
+
+                        </ul>
+                    </li>
+
+                    <li class="treeview "><a href="#"><i class="fa fa-map-marker text-red"></i> <span>GPS</span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a>
+                        <ul class="treeview-menu">
+                            <li><a class="" href="https://brightschool.com.np/gps"><i class="fa fa-bus"></i>  Bus Tracking </a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="https://brightschool.com.np/calendar"><i class="fa fa fa-calendar text-red"></i> <span>Calendar</span></a></li>
+                                                            <li><a href="https://brightschool.com.np/backup"><i class="fa fa fa-download text-red"></i> <span>Backup Data</span></a></li>
+                                            <li class="treeview"><a href="#"><i class="fa fa-question-circle text-red"></i> <span>Help</span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a></li>
+
+                   </ul>
+            </section>
+        </aside>
+                    <style>
+.flashy {
+    font-family: Arial, sans-serif;
+    padding: 11px 30px;
+    border-radius: 4px;
+    font-weight: 400;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.flashy--success {
+    background-color: #99c93d;
+    color: #fff;
+}
+
+.flashy--warning {
+    color: #8a6d3b;
+    background-color: #fcf8e3;
+    border-color: #faebcc;
+}
+
+.flashy--muted {
+    background: #eee;
+    color: #3a3a3a;
+    border: 1px solid #e2e2e2;
+}
+
+.flashy--muted-dark {
+    background: #133259;
+    color: #e2e1e7;
+}
+
+.flashy--info a,
+.flashy--primary-dark a {
+    color: #fff;
+}
+
+.flashy--error {
+    background: #d14130;
+    color: #fff;
+}
+
+.flashy--primary {
+    background: #573e81;
+}
+
+.flashy--primary-dark {
+    background: linear-gradient(to right, #133259 30%, #0d233e);
+}
+
+.flashy--info {
+    background: #00baf3;
+}
+
+.flashy > ul {
+    padding-left: 15px;
+}
+
+.flashy > p:only-of-type {
+    margin-bottom: 0;
+}
+
+.flashy i {
+    margin-right: 8px;
+    position: relative;
+    top: 6px;
+}
+
+.flashy .flashy__body {
+    color: inherit;
+}
+
+@media  only screen and (max-width:1050px) {
+    .flashy {
+        text-align: center;
+        right: 0;
+        left: 50%;
+        width: 300px;
+        margin-left: -150px;
+    }
+}
+</style>
+
+<script>
+    function flashy(message, link) {
+        var template = $($("#flashy-template").html());
+        $(".flashy").remove();
+        template.find(".flashy__body").html(message).attr("href", link || "#").end()
+         .appendTo("body").hide().fadeIn(300).delay(2800).animate({
+            marginRight: "-100%"
+        }, 300, "swing", function() {
+            $(this).remove();
+        });
+    }
+</script>
+
+    <div class="content-wrapper">
+        <div class="content">
+            <form action="https://brightschool.com.np/student" name="studentform" method="POST" enctype="multipart/form-data">
+                <input type="hidden" name="_token" value="03NV38k2da8obd1ytsJ1ayzD8UGa6mfLPmrzlWBC">
+            <div class="row">
+                <div class="col-md-12">
+
+                        <div class="box box-primary">
+                            <div class="box-header with-border">
+                                <h3 class="box-title">Register New Student</h3>
+                            </div>
+                            <!-- /.box-header -->
+                            <!-- form start -->
+
+                                <div class="box-body">
+                                    <div class="col-md-8">
+                                        <div class="row">
+
+                                            <div class="form-group col-md-4">
+                                                <label for="forstname">First Name <label class="text-red">*</label> </label>
+                                                <input class="form-control" id="firstname" name="firstname" type="text" placeholder="Enter First Name" value="" required>
+                                                
+                                            </div>
+                                            <div class="form-group col-md-4">
+                                                <label for="middlename">Middle Name</label>
+                                                <input class="form-control" id="middlename" name="middlename" type="text" value="" placeholder="Enter middle Name" >
+                                                
+                                            </div>
+                                            <div class="form-group col-md-4">
+                                                <label for="lastname">Last name <label class="text-red">*</label></label>
+                                                <input class="form-control" id="lastname" name="lastname" type="text" value="" placeholder="Enter Last Name" required>
+                                                                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="form-group col-lg-4">
+                                                <label for="Gender">Gender <label class="text-red">*</label> </label>
+                                                <select class="form-control" id="gender" name="gender" required>
+
+                                                    <option value="Male">Male</option>
+                                                    <option value="Female">Female</option>
+                                                    <option value="Other">Other</option>
+
+                                                </select>
+                                            </div>
+                                            <div class="form-group col-md-4">
+                                                <label>Date Of Birth BS</label>
+                                                <div class="input-group">
+                                                    <input class="form-control" type="text" id="nepaliDate9" name="datebs" value=""  placeholder="YYYY-MM-DD">
+                                                    <span class="input-group-addon">BS</span>
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-4">
+                                                <label>Date Of Birth AD</label>
+                                                <div class="input-group">
+                                                    <input class="form-control" type="text" id="englishDate8" name="datead" value=""  placeholder="YYYY-MM-DD">
+                                                    <span class="input-group-addon">AD</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+
+                                            <div class="form-group col-lg-3">
+                                                <label for="Gender">Religions </label>
+                                                <select class="form-control" id="religion" name="religion">
+                                                    <option value="">Select One</option>
+                                                    <option value="Hindu">Hindu</option>
+                                                    <option value="Buddhist">Buddhist</option>
+                                                    <option value="Muslim">Muslim</option>
+                                                    <option value="Christian">Christian</option>
+
+                                                </select>
+                                            </div>
+                                            <div class="form-group col-lg-3">
+                                                <label for="Gender">Caste </label>
+                                                <select class="form-control" id="caste" name="caste">
+                                                    <option value="">Select One</option>
+                                                                                                            <option value="Brahmin">Brahmin</option>
+                                                                                                                <option value="Chhetri">Chhetri</option>
+                                                                                                                <option value="Dalit">Dalit</option>
+                                                                                                                <option value="Janjati">Janjati</option>
+                                                                                                                <option value="Others">Others</option>
+                                                                                                        </select>
+                                            </div>
+                                            <div class="form-group col-lg-3">
+                                                <label for="Gender">Blood Group </label>
+                                                <select class="form-control" id="bloodg" name="bloodg">
+
+                                                    <option value="">Select One</option>
+                                                    <option value="O+">O+</option>
+                                                    <option value="O-">O-</option>
+                                                    <option value="A+">A+</option>
+                                                    <option value="A-">A-</option>
+                                                    <option value="B+">B+</option>
+                                                    <option value="B-">B-</option>
+                                                    <option value="AB+">AB+</option>
+                                                    <option value="AB-">AB-</option>
+
+                                                </select>
+                                            </div>
+
+                                            <div class="form-group col-lg-3">
+                                                <label for="Gender">Food Preference </label>
+                                                <select class="form-control" id="food_preference" name="food_preference">
+                                                    <option value="0">Non-veg</option>
+                                                    <option value="1">Veg</option>
+                                                </select>
+                                            </div>
+
+                                        </div>
+                                        <div class="row">
+                                            <div class="form-group col-md-3">
+
+                                                <label>Hobbies</label>
+
+                                                <select class="form-control select2 " name="bobbies[]" id="hobbies" multiple>
+                                                                                                    </select>
+
+                                            </div>
+                                            <div class="form-group col-md-3">
+
+                                                <label>Guardian Group</label>
+
+                                                <select class="form-control  " name="guardian_group_id" id="hobbies" >
+                                                    <option value=" ">Select One</option>
+                                                                                                    </select>
+
+                                            </div>
+                                            <div class="form-group col-md-6">
+
+                                                <label>Events and awards</label>
+                                                <textarea class="form-control"  name="event_award" type="text"> </textarea>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 pull-right">
+                                        <div class="row">
+                                            <img class="student-avatar img-circle" src="https://brightschool.com.np/images/student-avatar.png"  style="width: 170px;">
+                                        </div>
+                                        <div class="row">
+                                            <div class="form-group">
+                                                <label for="exampleInputFile">Image Upload</label>
+                                                <input id="exampleInputFile" name="image" type="file">
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                <!-- /.box-body -->
+
+                        </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+
+
+
+                    <div class="box box-success">
+                        <div class="box-header with-border">
+                            <h3 class="box-title">Academic Details</h3>
+                        </div>
+                        <div class="box-body">
+                        <div class="row">
+                            <div class="form-group col-lg-3">
+                                <label for="Gender">Batch <label class="text-red">*</label> </label>
+                                <select class="form-control" id="batch" name="batch" required>
+                                    <option value="">Select One</option>
+                                    
+                                        <option value="1"  >2072</option>
+                                    
+                                        <option value="2"  >2073</option>
+                                    
+                                        <option value="3"  >2074</option>
+                                    
+                                        <option value="4"  >2075</option>
+                                    
+                                        <option value="5"  >2076</option>
+                                    
+                                        <option value="6"  >2077</option>
+                                    
+                                        <option value="7"  >2078</option>
+                                    
+                                        <option value="8"   selected >2079</option>
+                                    
+
+                                </select>
+                                                            </div>
+
+                            <div class="form-group col-lg-3">
+                                <label for="Gender">Faculty <label class="text-red">*</label> </label>
+                                <select class="form-control" id="faculty" name="faculty">
+                                                                        <option value="1"  selected >School</option>
+                                                                    </select>
+                            </div>
+                            <div class="form-group col-lg-3">
+                                <label for="Gender">Level <label class="text-red">*</label> </label>
+                                <select class="form-control" id="level" name="level" required>
+                                                                                                                        <option value="1"  selected >School</option>
+                                                                                                                </select>
+                            </div>
+                            <div class="form-group col-lg-3">
+                                <label for="Gender">Program <label class="text-red">*</label> </label>
+                                <select class="form-control" id="program" name="program" required>
+
+                                                                                                                        <option value="1"  selected >School</option>
+                                                                                    <option value="2" >Mir Husen Ray</option>
+                                                                                                                </select>
+                            </div>
+                        </div>
+
+                            <div class="row">
+                                <div class="form-group col-lg-3">
+                                    <label for="Gender">Class <label class="text-red">*</label> </label>
+                                    <select class="form-control" id="class" name="class" required>
+                                                                                                                            <option value="">Select One</option>
+                                                                                    <option value="1">PG</option>
+                                                                                    <option value="2">Nursery</option>
+                                                                                    <option value="3">LKG</option>
+                                                                                    <option value="4">UKG</option>
+                                                                                    <option value="5">One</option>
+                                                                                    <option value="6">Two</option>
+                                                                                    <option value="7">Three</option>
+                                                                                    <option value="8">Four</option>
+                                                                                    <option value="9">Five</option>
+                                                                                    <option value="10">Six</option>
+                                                                                    <option value="11">Seven</option>
+                                                                                    <option value="12">Eight</option>
+                                                                                    <option value="13">Nine</option>
+                                                                                    <option value="14">Ten</option>
+                                                                                    <option value="15">Left</option>
+                                                                                                                                                                        </select>
+                                </div>
+
+                                <div class="form-group col-lg-3">
+                                    <label for="Gender">Shift </label>
+                                    <select class="form-control" id="shift" name="shift">
+
+                                        <option value="day">Day Shift</option>
+                                        <option value="morning" >Morning Shift</option>
+
+                                    </select>
+                                </div>
+                                <div class="form-group col-lg-3">
+                                    <label for="Gender">Section <label class="text-red">*</label> </label>
+                                    <select class="form-control" id="section" name="section" required>
+
+
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-3">
+                                    <label for="lastname">Roll No <label class="text-red">*</label></label>
+                                    <input class="form-control" id="rollno" name="rollno"  type="text" placeholder=" 201" required>
+                                                                    </div>
+
+                            </div>
+
+                            <div class="row">
+                                <div class="form-group col-lg-3">
+                                    <label for="type">Student Type <label class="text-red">*</label> </label>
+                                    <select class="form-control" id="type" name="type" required>
+                                        <option value="">Select One</option>
+                                                                                    <option value="1">Day Scholar</option>
+                                                                                    <option value="2">Boarder </option>
+                                                                                    <option value="3">Semi Border</option>
+                                                                                    <option value="4">Bus</option>
+                                                                            </select>
+                                </div>
+                                <div class="form-group col-lg-3">
+                                    <label for="Gender">Group </label>
+                                    <select class="form-control" id="group" name="group">
+                                        <option value="">Select One</option>
+                                                                                    <option value="1">Group A</option>
+                                                                                    <option value="2">group B</option>
+                                        
+                                    </select>
+                                </div>
+
+
+                                <div class="form-group col-md-3">
+                                    <label for="lastname">Admission Date</label>
+                                    <input class="form-control nepali-calendar nepaliDateAdmission" id="nepaliDateAdmission"  value="2022-12-18" name="admissionDate" type="text" placeholder="yyyy-mm-dd">
+                                                                    </div>
+
+                                <div class="form-group col-md-3">
+                                    <label for="lastname">SMSMobile Number <label class="text-red">*</label></label>
+                                    <input class="form-control" id="mobileNo" name="mobileno" type="number" value="" placeholder="123456789" required>
+                                                                    </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-md-3">
+                                    <label for="lastname">Registration No</label>
+                                    <input class="form-control" id="registration" name="registration" value="" type="text" placeholder="Registration No">
+                                                                    </div>
+                                <div class="form-group col-md-3">
+                                    <label for="symbolno">Symbol No</label>
+                                    <input class="form-control" id="symbolno" name="symbolno" type="text" value="" placeholder="Symbol No">
+                                                                    </div>
+                                <div class="form-group col-md-3">
+                                    <label for="emisno">EMIS No</label>
+                                    <input class="form-control" id="emisno" name="emisno" type="text" value="" placeholder="EMIS No">
+                                                                    </div>
+                                <div class="form-group col-md-3 add-input hidden">
+                                    <label for="lastname">Bus Stop</label>
+                                    <select class="form-control select2 select2-hidden-accessible" name="bussetup_id" style="width: 100%;">
+                                                                            <option value="1"> butwal</option>
+                                                                             <option value="2"> milanchowk</option>
+                                                                         </select>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-12">
+
+
+
+                    <div class="box box-success">
+                        <div class="box-header with-border">
+                            <h3 class="box-title">Address</h3>
+                        </div>
+                        <div class="box-body">
+                            <label> Parmanent</label>
+                            <div class="row">
+                                <div class="form-group col-lg-3">
+                                    <label for="Gender">Province No </label>
+                                    <select class="form-control select2 select2-hidden-accessible " id="province" name="province" style="width: 100%;">
+                                        <option value="">Select One</option>
+                                                                             <option value="1">Provinces 1</option>
+                                                                            <option value="2">Provinces 2</option>
+                                                                            <option value="3">provinces 3</option>
+                                                                            <option value="4">provinces 4</option>
+                                                                            <option value="5">provinces 5</option>
+                                                                            <option value="6">provinces 6</option>
+                                                                            <option value="7">provinces 7</option>
+                                                                        </select>
+
+                                </div>
+
+                                <div class="form-group col-md-3">
+                                    <label for="lastname">District</label>
+                                    <select class="form-control select2 select2-hidden-accessible" id="district" name="district" style="width: 100%;">
+
+                                    </select>
+                                     </div>
+                                <div class="form-group col-md-2">
+                                    <label for="lastname">MM/MR</label>
+                                    <select class="form-control select2 select2-hidden-accessible" id="mmrm" name="mmrm" style="width: 100%;" >
+
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-1">
+                                    <label for="lastname">Ward No.</label>
+                                    <input class="form-control" id="wardno" name="wardno" type="text" placeholder="11" value="">
+                                                                    </div>
+                                <div class="form-group col-md-3">
+                                    <label for="lastname">Tole</label>
+                                    <input class="form-control" id="village" name="village" type="text" placeholder="milanchowk" value="">
+                                                                    </div>
+
+
+                            </div>
+                            <label> Temporary</label>
+                            <div class="row">
+                                <div class="form-group col-lg-3">
+                                    <label for="Gender">province </label>
+                                    <select class="form-control select2 select2-hidden-accessible " id="tprovince" name="tprovince" style="width: 100%;">
+                                        <option value="">Select One</option>
+                                                                                    <option value="1">Provinces 1</option>
+                                                                                    <option value="2">Provinces 2</option>
+                                                                                    <option value="3">provinces 3</option>
+                                                                                    <option value="4">provinces 4</option>
+                                                                                    <option value="5">provinces 5</option>
+                                                                                    <option value="6">provinces 6</option>
+                                                                                    <option value="7">provinces 7</option>
+                                        
+                                    </select>
+                                </div>
+
+                                <div class="form-group col-md-3">
+                                    <label for="lastname">District</label>
+                                    <select class="form-control select2 select2-hidden-accessible" id="tdistrict" name="tdistrict" style="width: 100%;">
+
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-2">
+                                    <label for="lastname">MM/MR</label>
+                                    <select class="form-control select2 select2-hidden-accessible" id="tmmrm" name="tmmrm" style="width: 100%;">
+
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-1">
+                                    <label for="lastname">Ward No.</label>
+                                    <input class="form-control" id="twardno" name="twardno" type="text" placeholder="11" value="">
+                                                                    </div>
+                                <div class="form-group col-md-3">
+                                    <label for="lastname">Tole</label>
+                                    <input class="form-control" id="tvillage" name="tvillage" type="text" value="" placeholder="milanchowk">
+                                                                    </div>
+
+                            </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+
+
+            <div class="row">
+                <div class="col-md-12">
+
+                    <div class="box box-success">
+                        <div class="box-header with-border">
+                            <h3 class="box-title">Guardian Details</h3>
+                        </div>
+                        <div class="box-body">
+                            <div class="row">
+                                <div class="form-group col-md-3">
+                                    <label for="fname">Father's Name</label>
+                                    <input class="form-control" id="fname" name="fname" type="text"  placeholder="Enter Father Name">
+                                                                    </div>
+
+                                <div class="form-group col-md-2">
+                                    <label for="fphone">father's Phone</label>
+                                    <input class="form-control" id="fphone" name="fphone" type="number" value="" placeholder="Enter Father Phone NO">
+                                                                    </div>
+
+                                <div class="form-group col-md-3">
+                                    <label for="femail">Father's Email.</label>
+                                    <input class="form-control" id="femail" name="femail" type="text" value="" placeholder="Enter Father Email">
+                                                                    </div>
+
+                                <div class="form-group col-md-2">
+                                    <label for="fphone">Father Education</label>
+                                    <input class="form-control" id="" name="feducation" type="text" value="" placeholder="Enter Father Education">
+                                                                    </div>
+                                <div class="form-group col-md-2">
+                                    <label for="fphone">Father Occupation</label>
+                                    <input class="form-control" id="" name="foccupation" type="text" value="" placeholder="Enter Father Occupation">
+                                                                    </div>
+
+                            </div>
+                            <div class="row">
+
+                                <div class="form-group col-md-3">
+                                    <label for="mname">Mother's Name</label>
+                                    <input class="form-control" id="mname" name="mname" type="text" value="" placeholder="Enter Mother Name">
+                                                                    </div>
+                                <div class="form-group col-md-2">
+                                    <label for="mphone">Mother's Phone</label>
+                                    <input class="form-control" id="mphone" name="mphone" type="number" value="" placeholder="Enter Mother Phone No">
+                                                                    </div>
+
+                                <div class="form-group col-md-3">
+                                    <label for="memail">Mother's Email</label>
+                                    <input class="form-control" id="memail" name="memail" type="text" value="" placeholder="Enter Mother Email">
+                                                                    </div>
+                                <div class="form-group col-md-2">
+                                    <label for="fphone">Mother Education</label>
+                                    <input class="form-control" id="" name="meducation" type="text" value="" placeholder="Enter Mother Education">
+                                                                    </div>
+                                <div class="form-group col-md-2">
+                                    <label for="fphone">Mother Occupation</label>
+                                    <input class="form-control" id="" name="moccupation" type="text" value="" placeholder="Enter Mother Occupation">
+                                                                    </div>
+                            </div>
+                            <div class="row">
+
+                                <div class="form-group col-md-2">
+                                    <label for="gname">Guardian's Name</label>
+                                    <input class="form-control" id="gname" name="gname" type="text" value="" placeholder="Enter Guardian Name">
+                                                                    </div>
+                                <div class="form-group col-md-2">
+                                    <label for="gphone">Guardian's Phone</label>
+                                    <input class="form-control" id="gphone" name="gphone" type="number" value="" placeholder="Enter Guardian Phone No">
+                                                                    </div>
+
+                                <div class="form-group col-md-2">
+                                    <label for="gemail">Guardian's Email</label>
+                                    <input class="form-control" id="gemail" name="gemail" type="text" value="" placeholder="Enter Gaurdian Email">
+                                                                    </div>
+                                <div class="form-group col-md-2">
+                                    <label for="fphone">Guardian Education</label>
+                                    <input class="form-control" id="" name="geducation" type="text" value="" placeholder="Enter Guardian Education">
+                                                                    </div>
+                                <div class="form-group col-md-2">
+                                    <label for="fphone">Guardian Occupation</label>
+                                    <input class="form-control" id="" name="goccupation" type="text" value="" placeholder="Enter Guardian Occupation">
+                                                                    </div>
+                                <div class="form-group col-lg-2">
+                                    <label for="grelation">Guardian Relation </label>
+                                    <select class="form-control" id="grelation" name="grelation">
+                                        <option value="">Select One</option>
+                                                                                <option value="Brother">Brother</option>
+                                                                                <option value="Sister">Sister</option>
+                                                                                <option value="Uncle">Uncle</option>
+                                                                                <option value="Aunt">Aunt</option>
+                                                                                <option value="Others">Others</option>
+                                                                                <option value="Mir Husen Ray">Mir Husen Ray</option>
+                                        
+                                    </select>
+                                </div>
+                                <div class="form-group col-lg-2">
+                                    <label for="photography">Photography Concern </label>
+                                    <input class="checkbox" type="checkbox" value="1" name="photography" >
+                                </div>
+
+
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <div class="box box-success">
+                            <div class="box-header with-border">
+                                <h3 class="box-title">Other Details</h3>
+                            </div>
+                            <div class="box-body">
+                                <div class="row">
+                                    <div class="form-group col-md-3">
+                                        <label for="grelation">Major First </label>
+                                        <select class="form-control select2"  name="major_first">
+                                            <option value="">Select One</option>
+                                                                                            <option value="6">Nepali</option>
+                                                                                            <option value="7">English</option>
+                                                                                            <option value="8">Math</option>
+                                                                                            <option value="9">Science</option>
+                                                                                            <option value="10">social</option>
+                                            
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-3">
+                                        <label for="grelation">Major Second </label>
+                                        <select class="form-control select2"  name="major_second">
+                                            <option value="">Select One</option>
+                                                                                            <option value="6">Nepali</option>
+                                                                                            <option value="7">English</option>
+                                                                                            <option value="8">Math</option>
+                                                                                            <option value="9">Science</option>
+                                                                                            <option value="10">social</option>
+                                            
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-3">
+                                        <label for="minor">Minor </label>
+                                        <select class="form-control select2"  name="minor">
+                                            <option value="">Select One</option>
+                                                                                            <option value="6">Nepali</option>
+                                                                                            <option value="7">English</option>
+                                                                                            <option value="8">Math</option>
+                                                                                            <option value="9">Science</option>
+                                                                                            <option value="10">social</option>
+                                            
+                                        </select>
+                                    </div>
+
+                                    <div class="form-group col-md-3">
+                                        <label for="photography">Disabled Student ? </label>
+                                        <input class="checkbox" type="checkbox" value="1" name="disabled_student" >
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
+                        <div class="box-footer">
+                            <input class="btn btn-success" type="submit" value="Submit">
+                            <button class="btn btn-default pull-right">Cancel</button>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </form>
+
+        </div>
+    </div>
+    <script>
+
+        $(document).ready(function() {
+            $('.nepaliDateAdmission').val(AD2BS($('#nepaliDateAdmission').val()));
+//            $('#englishDate8').inputmask('yyyy-mm-dd');
+
+//Level
+            $('select[name=faculty]').on('change', function () {
+
+                $.ajaxSetup({
+                    headers: {
+                        'X-CSRF-TOKEN': $('input[name=_token]').val()
+                    }
+                });
+
+                var id = $(this).val();
+
+                console.log(id);
+                $.ajax({
+                    type: 'GET',
+                    url: 'https://brightschool.com.np/get-levels-from-faculty',
+                    dataType: 'json',
+                    data: {
+                        id: id
+                    },
+
+                    success: function (data) {
+
+                        $('select[name=level]').find('option').remove();
+                        $('select[name=program]').find('option').remove();
+                        $('select[name=class]').find('option').remove();
+                        $('select[name=section]').find('option').remove();
+                        $('select[name=level]').append($('<option value=""> Select One</option>'));
+                        $.each(data, function () {
+                            var option = $('<option value="' + this.id + '">' + this.name + '</option>');
+                            $('select[name=level]').append(option);
+                        });
+                    },
+                    error: function (data) {
+                        alert("error");
+                    }
+                });
+                return false;
+            });
+//program
+            $('select[name=level]').on('change', function () {
+
+                $.ajaxSetup({
+                    headers: {
+                        'X-CSRF-TOKEN': $('input[name=_token]').val()
+                    }
+                });
+
+                var id = $(this).val();
+                $.ajax({
+                    type: 'GET',
+                    url: 'https://brightschool.com.np/get-program-from-level',
+                    dataType: 'json',
+                    data: {
+                        id: id
+                    },
+
+                    success: function (data) {
+
+                        console.log(data);
+                        $('select[name=program]').find('option').remove();
+                        $('select[name=class]').find('option').remove();
+                        $('select[name=section]').find('option').remove();
+                        $('select[name=program]').append($('<option value=""> Select One</option>'));
+                        $.each(data, function () {
+                            var option = $('<option value="' + this.id + '">' + this.name + '</option>');
+                            $('select[name=program]').append(option);
+                        });
+                    },
+                    error: function (data) {
+                        alert("error");
+                    }
+                });
+                return false;
+            });
+//class
+            $('select[name=program]').on('change', function () {
+
+                $.ajaxSetup({
+                    headers: {
+                        'X-CSRF-TOKEN': $('input[name=_token]').val()
+                    }
+                });
+
+                var id = $(this).val();
+                console.log(id);
+                $.ajax({
+                    type: 'GET',
+                    url: 'https://brightschool.com.np/get-class-from-program',
+                    dataType: 'json',
+                    data: {
+                        id: id
+                    },
+
+                    success: function (data) {
+
+
+                        $('select[name=class]').find('option').remove();
+                        $('select[name=section]').find('option').remove();
+                        $('select[name=class]').append($('<option value=""> Select One</option>'));
+                        $.each(data, function () {
+                            var option = $('<option value="' + this.id + '">' + this.name + '</option>');
+                            $('select[name=class]').append(option);
+                        });
+                    },
+                    error: function (data) {
+                        alert("error");
+                    }
+                });
+                return false;
+            });
+//section
+            $('select[name=class]').on('change', function () {
+
+                $.ajaxSetup({
+                    headers: {
+                        'X-CSRF-TOKEN': $('input[name=_token]').val()
+                    }
+                });
+
+                var id = $(this).val();
+                console.log(id);
+                $.ajax({
+                    type: 'GET',
+                    url: 'https://brightschool.com.np/get-section-from-class',
+                    dataType: 'json',
+                    data: {
+                        id: id
+                    },
+
+                    success: function (data) {
+
+                        console.log(data);
+                        $('select[name=section]').find('option').remove();
+//                        $('select[name=department]').find('option').remove();
+//                        $('select[name=class]').find('option').remove();
+//                        $('select[name=section]').find('option').remove();
+                        $('select[name=section]').append($('<option value=""> Select One</option>'));
+                        $.each(data, function () {
+                            var option = $('<option value="' + this.id + '">' + this.name + '</option>');
+                            $('select[name=section]').append(option);
+                        });
+                    },
+                    error: function (data) {
+                        alert("error");
+                    }
+                });
+                return false;
+            });
+
+            $('select[name=section]').on('change', function () {
+                $.ajaxSetup({
+                    headers: {
+                        'X-CSRF-TOKEN': $('input[name=_token]').val()
+                    }
+                });
+
+                var id = $(this).val();
+
+                $.ajax({
+                    type: 'GET',
+                    url: 'https://brightschool.com.np/create-student-rollno',
+                    dataType: 'json',
+                    data: {
+                        section_id: id
+                    },
+                    success: function (data) {
+                        $('#rollno').val(data);
+                    },
+                    error: function (data) {
+                        alert("error");
+                    }
+                });
+            });
+//district
+            $('select[name=province]').on('change', function () {
+
+                $.ajaxSetup({
+                    headers: {
+                        'X-CSRF-TOKEN': $('input[name=_token]').val()
+                    }
+                });
+
+                var id = $(this).val();
+                $('select[name=tprovince]').val(id).change();
+
+                $.ajax({
+                    type: 'GET',
+                    url: 'https://brightschool.com.np/get-district-from-province',
+                    dataType: 'json',
+                    data: {
+                        id: id
+                    },
+
+                    success: function (data) {
+                        $('select[name=district]').find('option').remove();
+                        $('select[name=district]').append($('<option value=""> Select One</option>'));
+
+                        $.each(data, function () {
+                            var option = $('<option value="' + this.id + '">' + this.name + '</option>');
+                            $('select[name=district]').append(option);
+                        });
+
+                    },
+                    error: function (data) {
+                        alert("error");
+                    }
+                });
+                return false;
+            });
+//mmrm
+            $('select[name=district]').on('change', function () {
+
+                $.ajaxSetup({
+                    headers: {
+                        'X-CSRF-TOKEN': $('input[name=_token]').val()
+                    }
+                });
+
+                var id = $(this).val();
+                $('select[name=tdistrict]').val(id).change();
+
+                $.ajax({
+                    type: 'GET',
+                    url: 'https://brightschool.com.np/get-mmrm-from-district',
+                    dataType: 'json',
+                    data: {
+                        id: id
+                    },
+
+                    success: function (data) {
+                        $('select[name=mmrm]').find('option').remove();
+                        $('select[name=mmrm]').append($('<option value=""> Select One</option>'));
+                        $.each(data, function () {
+                            var option = $('<option value="' + this.id + '">' + this.name + '</option>');
+                            $('select[name=mmrm]').append(option);
+                        });
+                    },
+                    error: function (data) {
+                        alert("error");
+                    }
+                });
+                return false;
+            });
+
+            $('select[name=mmrm]').on('change',function () {
+                var id = $(this).val();
+                $('select[name=tmmrm]').val(id).change();
+            });
+
+            $('#wardno').on("keyup", function() {
+                $('#twardno').val($(this).val());
+            });
+            $('#village').on("keyup", function() {
+                $('#tvillage').val($(this).val());
+            });
+//Tdistrict
+            $('select[name=tprovince]').on('change', function () {
+
+                $.ajaxSetup({
+                    headers: {
+                        'X-CSRF-TOKEN': $('input[name=_token]').val()
+                    }
+                });
+
+                var id = $(this).val();
+                console.log(id);
+                $.ajax({
+                    type: 'GET',
+                    url: 'https://brightschool.com.np/get-district-from-province',
+                    dataType: 'json',
+                    data: {
+                        id: id
+                    },
+
+                    success: function (data) {
+
+                        $('select[name=tdistrict]').find('option').remove();
+                        $('select[name=tdistrict]').append($('<option value=""> Select One</option>'));
+                        $.each(data, function () {
+                            var option = $('<option value="' + this.id + '">' + this.name + '</option>');
+                            $('select[name=tdistrict]').append(option);
+                        });
+                    },
+                    error: function (data) {
+                        alert("error");
+                    }
+                });
+                return false;
+            });
+//Tmmrm
+            $('select[name=tdistrict]').on('change', function () {
+
+                $.ajaxSetup({
+                    headers: {
+                        'X-CSRF-TOKEN': $('input[name=_token]').val()
+                    }
+                });
+
+                var id = $(this).val();
+
+                $.ajax({
+                    type: 'GET',
+                    url: 'https://brightschool.com.np/get-mmrm-from-district',
+                    dataType: 'json',
+                    data: {
+                        id: id
+                    },
+
+                    success: function (data) {
+                        $('select[name=tmmrm]').find('option').remove();
+                        $('select[name=tmmrm]').append($('<option value=""> Select One</option>'));
+                        $.each(data, function () {
+                            var option = $('<option value="' + this.id + '">' + this.name + '</option>');
+                            $('select[name=tmmrm]').append(option);
+                        });
+                    },
+                    error: function (data) {
+                        alert("error");
+                    }
+                });
+                return false;
+            });
+        });
+
+        </script>
+
+
+
+    <script>
+        $(document).ready(function(){
+
+
+
+            $('#nepaliDate5').nepaliDatePicker({
+                npdMonth: true,
+                npdYear: true,
+                npdYearCount: 10
+            });
+
+
+            $('#nepaliDateAdmission').nepaliDatePicker({
+                onFocus: true,
+                npdMonth: true,
+                npdYear: true
+            });
+
+
+            $('#englishDate8').change(function(){
+                $('#nepaliDate9').val(AD2BS($('#englishDate8').val()));
+            });
+
+            $('#nepaliDate9').change(function(){
+                $('#englishDate8').val(BS2AD($('#nepaliDate9').val()));
+            });
+
+//gender wise image change
+            $('select[name=gender]').on('change', function () {
+                var name = $(this).val();
+               if(name === 'female'){
+                   $(".student-avatar").attr("src", "https://brightschool.com.np/images/f-student-avatar.png");
+               }else{
+                   $(".student-avatar").attr("src", "https://brightschool.com.np/images/student-avatar.png");
+
+               }
+            });
+//student wise input box
+            $('select[name=type]').on('change', function () {
+                var name = $(this).val();
+                if(name === '4'){
+                    $('.add-input').removeClass('hidden');
+                }else{
+                    $('.add-input').addClass('hidden');
+                }
+            });
+
+
+        });
+//student image upload
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('.student-avatar').attr('src', e.target.result);
+                }
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+
+        $("#exampleInputFile").change(function(){
+            readURL(this);
+        });
+
+
+    </script>
+        <footer class="main-footer print-hide">
+        <div class="container">
+            <div class="row" style="width:95%;">
+                <div class="pull-right hidden-xs">
+                    <b>Version</b> &nbsp; <span class="label label-primary">2.0.9</span>  &nbsp; Designed & Developed by Bright Office Systems Pvt. Ltd.
+                </div>
+                <strong>Copyright &copy; 2021 <a href="#"> Bright School</a>. &nbsp; &nbsp; &nbsp; &nbsp; Current Session: 2079  </strong>
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
