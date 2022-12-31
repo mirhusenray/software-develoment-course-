@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result program</title>
+</head>
+<body>
+    <h1 align="center">Student Result</h1>
+    <script>
+        var name=prompt("Enter student name ?");
+        var roll=parseInt(prompt("Enter student roll number ?"));
+        // For english mark
+        var eng=parseFloat(prompt("Enter your English Marks ?"));
+        // for nepali mark
+        var nep=parseFloat(prompt("Enter your Nepali marks ?"));
+        // for math mark
+        var math=parseFloat(prompt("Enter your math marks ?"));
+        // for science mark
+        var sci=parseFloat(prompt("Enter your Science marks ?"));
+        // for computer mark
+        var com=parseFloat(prompt("Enter your computer marks ?"));
+
+        // for Total subject marks
+
+        var total=eng+nep+math+sci+com;
+
+        // for percentage
+        var per=(total/500)*100;
+
+        document.write("Student Name :"+"<b>"+name+"</b>");
+        document.write("<br>Student Roll : "+"<b>"+roll+"</b>");
+        document.write("<br>Total marks is : "+"<b>"+total+"</b>");
+        document.write("<br>Total Percentage is :"+"<b>"+per+"% </b>");
+
+              // for student result
+        if(eng >=32 && nep>=32 && math >=32 && sci >=32 && com >=32)
+        {
+            document.write("<br>Your result is : <b>Congratulation you are pass</b>");
+        }
+        else
+        {
+            document.write("<br>Your result is : <b>Opps you are fail</b>");
+        }
+
+        // for division 
+         
+        if(per >=80 && per <=100)
+        {
+            document.write("<br>Your division is :<b> Distinction</b>");
+        }
+        // for first division
+
+        if(per <=79 && per >=60)
+        {
+            document.write("<br>Your division is :<b> First Division</b>");
+        }
+
+         // for second division
+
+         if(per <=59 && per >=40)
+        {
+            document.write("<br>Your division is : <b>Second Division</b>");
+        }
+
+         // for third division
+
+         if(per <=39 && per >=30)
+        {
+            document.write("<br>Your division is :<b> Third Division</b>");
+        } 
+    </script>
+</body>
+</html>
