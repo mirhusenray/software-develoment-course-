@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <!-- <h1 id="demo">The Document Object</h1>
+    <h2>The getElementById() Method</h2>
+    <script>
+      const myElement = document.getElementById("demo");
+      myElement.style.color = "blue";
+    </script> -->
+    <div class="example">
+      <p>This is a paragraph.</p>
+    </div>
+    <br />
+    <div class="example color">
+      <p>This is a first array.</p>
+    </div>
+    <br />
+    <div class="example color ajit">
+      <p>This is a ajit.</p>
+    </div>
+
+    <script>
+      const collection = document.getElementsByClassName("example color");
+      collection[3].style.backgroundColor = "red";
+      // console.log(collection);
+      const collection1 = document.getElementsByClassName("ajit");
+      collection1.style.backgroundColor = "blue";
+    </script>
+  </body>
+</html>
